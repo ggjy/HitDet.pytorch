@@ -40,6 +40,8 @@ $HitDet.pytorch/data
 
 ### Getting Start
 
+Our pretrained backbone params can be found in [BaiduCloud](https://pan.baidu.com/s/1mH4-qowzqlydhQ5VIaK--g). pwd: jbsm
+
 Train the searched model:
 ```
 cd scripts
