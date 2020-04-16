@@ -10,6 +10,7 @@ We released the searched Hit-Detector Architecture.
 - Torchvision == 0.3.0
 
 You can directly run the code ```sh env.sh``` to setup the running environment.
+We use 8 GPUs (32GB V100) to train our detector, you can adjust the batch size in configs by yourselves.
 
 ### Data Preparatoin
 
@@ -41,8 +42,8 @@ $HitDet.pytorch/data
 
 Train the searched model:
 ```
-python -m torch.distributed.launch --nproc_per_node=8 train.py --gpus 8 --validate \
---launcher pytorch --work_dir YOURDIR --config configs/nas_trinity/two-stage_hitdet.py
+cd scripts
+sh train_hit_det.sh
 ```
 
 ### Results on COCO minival
