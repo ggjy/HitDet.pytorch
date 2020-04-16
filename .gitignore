@@ -1,0 +1,5 @@
+/data
+/ImageNet-pretrained
+/work_dirs
+*/__pycache__
+
